@@ -1,19 +1,14 @@
-<!doctype html>
+<!d<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>IA y Modelados | Curso paso a paso (Info al privado)</title>
-  <meta name="description" content="Curso paso a paso para aprender a crear modelos virtuales con Inteligencia Artificial. Para principiantes. Info por WhatsApp." />
+  <title>IA y Modelados | Cursos (Info al privado)</title>
+  <meta name="description" content="Curso paso a paso para crear modelos virtuales con IA y curso IA para creadores (videos, imágenes, textos, branding). Info por WhatsApp." />
 
-  <!-- Open Graph (vista previa al compartir link) -->
-  <meta property="og:title" content="IA y Modelados | Curso paso a paso" />
-  <meta property="og:description" content="Aprende a crear modelos virtuales con IA. Proceso completo desde cero. Info por WhatsApp." />
+  <meta property="og:title" content="IA y Modelados | Cursos paso a paso" />
+  <meta property="og:description" content="Acceso de por vida. Modelos virtuales + IA para creadores. Info por WhatsApp." />
   <meta property="og:type" content="website" />
-  <!-- Si luego subes una imagen preview.jpg al repo, descomenta y ajusta la URL:
-  <meta property="og:image" content="https://santimz-svg.github.io/Cursos-IA/preview.jpg" />
-  -->
-
   <meta name="theme-color" content="#0b1220" />
 
   <style>
@@ -44,7 +39,15 @@
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--max);margin:0 auto;padding:22px}
     .row{display:flex;gap:12px;align-items:center}
-    .space{justify-content:space-between}
+    .muted{color:var(--muted)}
+    .sep{height:1px;background:rgba(255,255,255,.08);margin:14px 0}
+    .tag{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      font-size:12px;color:var(--muted);
+    }
 
     /* Top bar */
     .topbar{
@@ -317,9 +320,16 @@
 
   <div class="wrap">
 
-    <!-- HERO -->
-    <div class="hero">
+    <!-- =========================
+         CURSO 1: MODELOS VIRTUALES
+         ========================= -->
+    <div class="hero" id="curso-modelos">
       <section class="card">
+        <div class="row" style="justify-content:space-between; gap:10px; flex-wrap:wrap">
+          <span class="tag">📌 Curso 1</span>
+          <span class="tag">✅ Acceso de por vida</span>
+        </div>
+
         <h1>Aprende a crear <span style="color:var(--accent)">modelos virtuales</span> con Inteligencia Artificial</h1>
         <p class="sub">
           Curso práctico para principiantes: aprende el proceso completo para crear modelos virtuales, generar contenido
@@ -330,7 +340,7 @@
           <span class="badge">✅ Para principiantes</span>
           <span class="badge">✅ No necesitas programación</span>
           <span class="badge">✅ Celular o computador</span>
-          <span class="badge">✅ Acceso de por vida</span>
+          <span class="badge">✅ Paso a paso</span>
         </div>
 
         <ul class="bullets">
@@ -344,15 +354,15 @@
           <li>
             <div class="check">✓</div>
             <div>
-              <b>Modelos más consistentes</b>
-              <small>Aprendes a mantener estética y coherencia para crear contenido constante.</small>
+              <b>Mejorar calidad y realismo</b>
+              <small>Ajustes para que el resultado se vea profesional.</small>
             </div>
           </li>
           <li>
             <div class="check">✓</div>
             <div>
-              <b>Enfoque responsable para redes</b>
-              <small>Cómo presentar contenido de forma segura y evitar bloqueos innecesarios.</small>
+              <b>Contenido para redes (responsable)</b>
+              <small>Formatos, ideas y cómo presentarlo para evitar bloqueos innecesarios.</small>
             </div>
           </li>
         </ul>
@@ -362,11 +372,11 @@
             <div class="big">$14.900 COP</div>
             <div class="meta">Pago único · Acceso de por vida</div>
           </div>
-          <button class="btn primary" id="ctaHero" type="button">📩 Info al privado</button>
+          <button class="btn primary" id="ctaModelosHero" type="button">📩 Info al privado</button>
         </div>
 
         <div class="note">
-          *No hacemos promesas de ingresos. Los resultados dependen del uso y dedicación de cada persona.
+          *Contenido educativo. No hacemos promesas de ingresos. Los resultados dependen del uso y dedicación.
         </div>
       </section>
 
@@ -374,7 +384,7 @@
       <aside class="card" id="contacto">
         <h2 style="margin:0 0 6px">Pide información por WhatsApp</h2>
         <p class="sub" style="margin-bottom:10px">
-          Completa 2 datos (opcional) y te abre WhatsApp con el mensaje listo.
+          Completa 2 datos (opcional) y se abre WhatsApp con el mensaje listo.
         </p>
 
         <div class="form">
@@ -404,26 +414,7 @@
       </aside>
     </div>
 
-    <!-- PARA QUIÉN ES -->
-    <section class="card section">
-      <h2>¿Para quién es este curso?</h2>
-      <div class="grid3">
-        <div class="miniCard">
-          <b>✅ Principiantes</b>
-          <p>Si nunca has usado IA, aquí empiezas con lo básico y vas subiendo.</p>
-        </div>
-        <div class="miniCard">
-          <b>✅ Creadores</b>
-          <p>Si quieres hacer contenido visual más rápido y con estética profesional.</p>
-        </div>
-        <div class="miniCard">
-          <b>✅ Proyectos digitales</b>
-          <p>Ideal para explorar ideas de contenido y presencia en redes.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CÓMO FUNCIONA -->
+    <!-- CÓMO FUNCIONA (sin botón) -->
     <section class="card section">
       <h2>Cómo funciona (simple y claro)</h2>
       <p class="sub">Este es el flujo que vas a aprender, de forma práctica:</p>
@@ -458,37 +449,119 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div style="margin-top:14px">
-        <button class="btn primary" id="ctaMid" type="button">📩 Pedir info ahora</button>
+    <div class="sep"></div>
+
+    <!-- =========================
+         CURSO 2: IA PARA CREADORES
+         ========================= -->
+    <section class="card section" id="curso-creadores">
+      <div class="row" style="justify-content:space-between; gap:10px; flex-wrap:wrap">
+        <span class="tag">✨ Curso independiente</span>
+        <span class="tag">✅ Acceso de por vida</span>
+        <span class="tag">📂 Entrega por Drive</span>
+      </div>
+
+      <h2 style="margin-top:10px;font-size:26px;letter-spacing:-.4px">
+        Curso Completo de Inteligencia Artificial para Creadores
+      </h2>
+
+      <p class="sub">
+        Aprende IA desde cero y lleva tu creatividad al siguiente nivel: crea <b>videos</b>, <b>imágenes</b>, <b>textos</b>,
+        <b>branding</b> y contenido para redes <b>paso a paso</b>, desde casa y a tu ritmo.
+      </p>
+
+      <div class="badges">
+        <span class="badge">✅ Ideal si eres principiante</span>
+        <span class="badge">✅ Acceso de por vida</span>
+        <span class="badge">✅ Módulos organizados</span>
+      </div>
+
+      <div class="price" style="margin-top:12px">
+        <div>
+          <div class="big">$20.000 COP</div>
+          <div class="meta">Pago único · Acceso de por vida</div>
+        </div>
+        <button class="btn primary" id="ctaCreadoresHero" type="button">📩 Info al privado</button>
+      </div>
+
+      <div class="note">*Contenido educativo. Los resultados dependen del uso y práctica de cada persona.</div>
+
+      <div class="sep"></div>
+
+      <h2>¿Qué incluye el pack?</h2>
+      <ul class="bullets" style="margin-top:10px">
+        <li><div class="check">✓</div><div><b>+100 clases prácticas</b><small>Organizadas en módulos, para avanzar sin perderte.</small></div></li>
+        <li><div class="check">✓</div><div><b>Prompts efectivos</b><small>Cómo pedirle a la IA resultados profesionales.</small></div></li>
+        <li><div class="check">✓</div><div><b>Videos PRO, imágenes, voces, logos, branding, web y automatización</b><small>Un pack completo para creadores.</small></div></li>
+        <li><div class="check">✓</div><div><b>Cursos extra incluidos</b><small>Material adicional para potenciar tus resultados.</small></div></li>
+      </ul>
+
+      <div class="sep"></div>
+
+      <h2>Lo que podrás crear con IA</h2>
+      <div class="grid3" style="margin-top:10px">
+        <div class="miniCard"><b>🎬 Videos para redes</b><p>TikTok, Reels y Shorts con guion, estructura y estilo.</p></div>
+        <div class="miniCard"><b>🖼️ Imágenes hiperrealistas</b><p>Creativas y de alto impacto visual.</p></div>
+        <div class="miniCard"><b>✍️ Textos y contenido</b><p>Captions, guiones, ideas y copies.</p></div>
+        <div class="miniCard"><b>🎙️ Voces y narraciones</b><p>Para videos, reels y contenido educativo.</p></div>
+        <div class="miniCard"><b>🎭 Avatares</b><p>Personajes para tu marca o contenido.</p></div>
+        <div class="miniCard"><b>💼 Branding básico</b><p>Identidad visual, estilo y base de marca.</p></div>
+      </div>
+
+      <div class="sep"></div>
+
+      <h2>Bonos incluidos (GRATIS)</h2>
+      <div class="grid3" style="margin-top:10px">
+        <div class="miniCard"><b>🎬 Edición Profesional</b><p>Para contenido visual de alto impacto.</p></div>
+        <div class="miniCard"><b>🚀 100 Claves del Emprendimiento con IA</b><p>IA aplicada a negocios reales.</p></div>
+        <div class="miniCard"><b>📚 +150 libros</b><p>Emprendimiento y negocios en digital.</p></div>
+        <div class="miniCard"><b>📖 +1.000 libros adicionales</b><p>Formación continua para crecer.</p></div>
+        <div class="miniCard"><b>✍️ Storytelling</b><p>Contenido que conecta y vende mejor.</p></div>
+        <div class="miniCard"><b>🎁 Pack extra</b><p>Material de apoyo para potenciar habilidades.</p></div>
+      </div>
+
+      <div class="sep"></div>
+
+      <h2>Precio y entrega</h2>
+      <p class="sub" style="margin-bottom:0">
+        <b>Valor real:</b> $200.000 COP<br>
+        <b>Hoy:</b> <span style="color:#d7ffe7;font-weight:1000">$20.000 COP</span> (pago único)<br>
+        ✅ Acceso de por vida<br>
+        📂 Entrega inmediata por Google Drive
+      </p>
+
+      <div style="margin-top:12px">
+        <button class="btn primary" id="ctaCreadoresAcceso" type="button">Quiero el acceso por WhatsApp</button>
+      </div>
+
+      <div class="note" style="margin-top:10px">
+        *Si ya tienes herramientas como Gemini Pro, perfecto: aquí aprendes a usarlas mejor y a combinarlas cuando haga sentido.
       </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- FAQ GENERAL (sin botón) -->
     <section class="card section">
       <h2>Preguntas frecuentes</h2>
       <div style="display:grid;gap:10px;margin-top:10px">
         <details>
-          <summary>¿Necesito comprar aplicaciones?</summary>
-          <p>No es obligatorio. Puedes empezar con opciones gratuitas. Si luego quieres más calidad o velocidad, algunas herramientas tienen planes pagos opcionales.</p>
+          <summary>¿Necesito saber de IA?</summary>
+          <p>No. Empieza desde cero y vas paso a paso.</p>
         </details>
         <details>
-          <summary>¿Esto es solo un prompt?</summary>
-          <p>No. El curso te guía con herramientas, pasos, ejemplos y organización para que el resultado sea repetible y consistente.</p>
+          <summary>¿Es solo teoría?</summary>
+          <p>No. Son clases prácticas organizadas en módulos.</p>
         </details>
         <details>
-          <summary>¿Me garantizan ingresos?</summary>
-          <p>No. Nadie serio puede garantizar eso. El curso enseña el proceso; el resultado depende del tiempo y uso que le des.</p>
+          <summary>¿Necesito pagar herramientas?</summary>
+          <p>Puedes empezar con herramientas gratuitas. Algunas opciones premium son opcionales si luego quieres escalar.</p>
         </details>
-      </div>
-
-      <div style="margin-top:14px">
-        <button class="btn primary" id="ctaFaq" type="button">📩 Info al privado</button>
       </div>
     </section>
 
     <div class="footer">
-      © <span id="year"></span> IA y Modelados · Contenido educativo sobre Inteligencia Artificial y modelos virtuales.
+      © <span id="year"></span> IA y Modelados · Contenido educativo sobre Inteligencia Artificial.
     </div>
 
   </div>
@@ -508,50 +581,53 @@
   <div class="sticky">
     <div class="inner">
       <div>
-        <b>$14.900 COP · Pago único</b>
-        <span>Acceso de por vida · Info al WhatsApp</span>
+        <b>Info por WhatsApp</b>
+        <span>Respondo rápido · 3147330251</span>
       </div>
       <button class="btn primary" id="ctaSticky" type="button">📩 WhatsApp</button>
     </div>
   </div>
 
   <script>
-    // ✅ WhatsApp requiere formato internacional para wa.me
-    // Tu número "3147330251" (Colombia) se convierte a:
-    // 57 + 3147330251 = 573147330251
+    // WhatsApp requiere formato internacional para wa.me
+    // 3147330251 (Colombia) -> 57 + 3147330251 = 573147330251
     const WHATSAPP_NUMBER = "573147330251";
 
-    const BASE_MESSAGE =
-      "Hola, quiero información del curso para crear modelos virtuales con IA. ¿Cómo puedo acceder?";
+    const MSG_MODELOS =
+      "Hola, quiero información del Curso 1 (Modelos virtuales con IA). ¿Cómo puedo acceder?";
+    const MSG_CREADORES =
+      "Hola, quiero información del Curso IA para Creadores (videos, imágenes, textos, branding). ¿Cómo puedo acceder?";
 
     function buildWhatsAppLink(message) {
       return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
     }
-
     function openWhatsApp(message) {
       window.open(buildWhatsAppLink(message), "_blank", "noopener,noreferrer");
     }
 
-    // CTAs
-    document.getElementById("ctaHero").addEventListener("click", () => openWhatsApp(BASE_MESSAGE));
-    document.getElementById("ctaMid").addEventListener("click", () => openWhatsApp(BASE_MESSAGE));
-    document.getElementById("ctaFaq").addEventListener("click", () => openWhatsApp(BASE_MESSAGE));
-    document.getElementById("waFloat").addEventListener("click", () => openWhatsApp(BASE_MESSAGE));
-    document.getElementById("ctaSticky").addEventListener("click", () => openWhatsApp(BASE_MESSAGE));
+    // Botones curso 1
+    document.getElementById("ctaModelosHero").addEventListener("click", () => openWhatsApp(MSG_MODELOS));
 
-    // Form -> WhatsApp
+    // Botones curso 2
+    document.getElementById("ctaCreadoresHero").addEventListener("click", () => openWhatsApp(MSG_CREADORES));
+    document.getElementById("ctaCreadoresAcceso").addEventListener("click", () => openWhatsApp(MSG_CREADORES));
+
+    // Botón flotante y sticky (mensaje general)
+    document.getElementById("waFloat").addEventListener("click", () => openWhatsApp("Hola, quiero información. ¿Me puedes orientar?"));
+    document.getElementById("ctaSticky").addEventListener("click", () => openWhatsApp("Hola, quiero información. ¿Me puedes orientar?"));
+
+    // Form -> WhatsApp (mensaje general + datos)
     document.getElementById("ctaForm").addEventListener("click", () => {
       const name = (document.getElementById("name").value || "").trim();
       const goal = (document.getElementById("goal").value || "").trim();
 
-      let msg = BASE_MESSAGE;
+      let msg = "Hola, quiero información sobre los cursos de IA. ¿Me puedes orientar?";
       if (name) msg += "\n\nMi nombre es: " + name;
       if (goal) msg += "\nQuiero aprender/crear: " + goal;
       msg += "\n\n(Enviado desde la página web)";
       openWhatsApp(msg);
     });
 
-    // Year
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
