@@ -50,37 +50,52 @@
     }
 
     /* =========================
-       BANNERS LATERALES (DESKTOP)
-       ========================= */
-    .side-banner{
-      position: fixed;
-      top: 110px;
-      width: 280px;
-      z-index: 5;
-      opacity: .95;
-      pointer-events: none; /* no estorba los clics */
-      display: block;
-    }
-    .side-banner img{
-      width: 100%;
-      height: auto;
-      display:block;
-      border-radius: 22px;
-      border: 1px solid rgba(255,255,255,.12);
-      box-shadow: 0 22px 70px rgba(0,0,0,.55);
-    }
-    .side-banner.left{ left: 18px; }
-    .side-banner.right{ right: 18px; }
+   BANNERS LATERALES (DESKTOP) - MEJOR ACOPLE
+   ========================= */
 
-    /* Ajustes para pantallas medianas */
-    @media (max-width: 1500px){
-      .side-banner{ width: 240px; }
-    }
+/* En desktop: centrados verticalmente y tamaño adaptable */
+.side-banner{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(200px, 16vw, 290px);
+  z-index: 5;
+  opacity: .98;
+  pointer-events: none;
+  display: block;
+}
 
-    /* Ocultar en tablet/móvil (y evitar que se monten encima) */
-    @media (max-width: 1200px){
-      .side-banner{ display:none; }
-    }
+.side-banner img{
+  width: 100%;
+  height: auto;
+  display:block;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.12);
+  box-shadow: 0 22px 70px rgba(0,0,0,.55);
+}
+
+/* Los acerca al contenido automáticamente (mejor que left:18px) */
+.side-banner.left{
+  left: max(10px, calc((100vw - var(--max)) / 2 - 320px));
+}
+.side-banner.right{
+  right: max(10px, calc((100vw - var(--max)) / 2 - 320px));
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1500px){
+  .side-banner{
+    width: clamp(170px, 15vw, 240px);
+  }
+  .side-banner.left{ left: 12px; }
+  .side-banner.right{ right: 12px; }
+}
+
+/* Ocultar en tablet/móvil */
+@media (max-width: 1200px){
+  .side-banner{ display:none; }
+}
+
 
     /* Top bar */
     .topbar{
@@ -397,6 +412,7 @@
     <img src="img/curso-ia.png" alt="Crea Contenido con IA">
   </div>
 
+
   <!-- TOPBAR -->
   <div class="topbar">
     <div class="inner">
@@ -613,16 +629,6 @@
         <div class="miniCard"><b>✍️ Storytelling</b><p>Contenido que conecta y vende mejor.</p></div>
         <div class="miniCard"><b>🎁 Pack extra</b><p>Material de apoyo para potenciar habilidades.</p></div>
       </div>
-
-      <div class="sep"></div>
-
-      <h2>Precio y entrega</h2>
-      <p class="sub" style="margin-bottom:0">
-        <b>Valor real:</b> $200.000 COP<br>
-        <b>Hoy:</b> <span style="color:#d7ffe7;font-weight:1000">$20.000 COP</span> (pago único)<br>
-        ✅ Acceso de por vida<br>
-        📂 Entrega inmediata por Google Drive
-      </p>
     </section>
 
     <!-- DEMO (abre en YouTube, sin embed) -->
@@ -637,12 +643,6 @@
           <div class="demoTag">🎬 Demo real</div>
           <h3>IA Completo para Creadores</h3>
           <p>Te muestro un ejemplo corto del contenido y el estilo del curso para que veas cómo es por dentro.</p>
-
-          <div style="margin-top:12px">
-            <button class="btn primary" id="ctaDemoWA" type="button">
-              📩 Quiero más info por WhatsApp
-            </button>
-          </div>
         </div>
 
         <div class="demoRight" role="button" aria-label="Abrir demo en YouTube" tabindex="0">
